@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+    font-family: "Roboto","san-serif","swap";
+}
+
+header video {
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+  }
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+li{
+    list-style: none;
+}
+
+header{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+/* header {
+    background: linear-gradient(237deg, #333736, #302260, #225260);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 23s ease infinite;
+    -moz-animation: AnimationName 23s ease infinite;
+    animation: AnimationName 23s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+} */
+/* header {
+    background: linear-gradient(47deg, #e542e8, #7042e8, #42e1e8);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 28s ease infinite;
+    -moz-animation: AnimationName 28s ease infinite;
+    animation: AnimationName 28s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+} */
+
+nav ul{
+    width: 100%;
+}
+
+nav ul li{
+    cursor: pointer;
+}
+
+nav ul li a:link,
+nav ul li a:visited{
+    font-size: 105%;
+    color:  #ccc;
+    text-decoration: none;
+}
+
+nav ul li a::after{
+    padding-top: 3px;
+    display: block;
+    content: '';
+    height: 4px ;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all 0.4s;
+}
+
+nav ul li:hover a::after{
+    background-color: #ccc;
+}
+
+.sign-in-btn{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sign-in-icon{
+    color: #ccc;
+    display: none;
+}
+
+.sign-in-icon.login-false{
+    display: block;
+}
+
+.account-btn{
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.account-btn.login-true{
+    display: block;
+}
+
+.register_login-links{
+    display: none;
+}
+
+.user-account{
+    display: none;
+}
+
+.hero-text{
+    text-align: center;
+    margin-top: 200px;
+    color: #fff;
+}
+
+.hero-text h1{
+    font-size: 350%;
+    letter-spacing: 7px;
+    font-weight: bold;
+}
+
+.typing-text{
+    display: inline-block;
+}
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 8s steps(20, end) forwards, blinking .8s infinite;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: orange; }
+  }
+
+.blogs .py-2.text-end i{
+    cursor: pointer;
+    font-size: 105%;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.contact-col{
+    cursor: pointer;
+}
+
+.contact-col li a{
+    cursor: pointer;
+}
+
+.fa-brands{
+    font-size: 150%;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+
+.blog-author span{
+    font-size: 75%;
+}
+
+.comments{
+    display: none;
+}
